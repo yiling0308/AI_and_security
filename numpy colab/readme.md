@@ -19,3 +19,4 @@ from numpy import dot
 print map(list,dot(a,b))
 print map(list,dot(b,a))
 ```
+![numpy01](https://github.com/yiling0308/AI_and_security/blob/master/numpy%20colab/picture/1.png)
