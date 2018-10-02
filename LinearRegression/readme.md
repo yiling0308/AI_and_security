@@ -59,6 +59,8 @@ print(lm.coef_)
 print(lm.intercept_ )
 
 ```
+![tensorflow1](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow.PNG)
+
 再次執行
 ```
 python2 abc.py
@@ -66,7 +68,7 @@ python2 abc.py
 [-36.36123348]
 
 ```
-
+![tensorflow2](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow2.PNG)
 
 ###  使用線性迴歸分析模型預測:用氣溫來預測冰紅茶的銷售量
 
@@ -90,7 +92,8 @@ predicted_sales = lm.predict(np.reshape(to_be_predicted, (len(to_be_predicted), 
 # 預測的冰紅茶銷量
 print(predicted_sales)
 ```
-
+![tensorflow3](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow3.PNG)
+![tensorflow4](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow4.PNG)
 ### 線性迴歸視覺化:使用 matplotlib.pyplot 的 scatter() 與 plot() 方法
 ```
 %matplotlib inline
@@ -118,7 +121,8 @@ plt.yticks(())
 plt.show()
 
 ```
-
+![tensorflow5](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow5.PNG)
+![tensorflow6](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow6.PNG)
 ### 線性迴歸模型的績效:使用線性迴歸模型的績效（Performance|**Mean squared error（MSE）**與 R-squared
 ```
 import numpy as np
@@ -143,4 +147,5 @@ print(mse)
 print(r_squared)
 
 ```
-
+![tensorflow7](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow7.PNG)
+![tensorflow8](https://github.com/yiling0308/AI_and_security/blob/master/LinearRegression/picture/tensorflow8.PNG)
