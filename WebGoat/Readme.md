@@ -12,6 +12,10 @@
 
     java -jar webgoat-container-7.1-exec.jar
     
+![執行WebGoat](https://github.com/yiling0308/AI_and_security/blob/master/WebGoat/picture/1.png)
+    
 #### WebGoat使用8080 PORT，開啟瀏覽器，網址輸入
 
     http://localhost:8080/WebGoat
+
+![執行WebGoat](https://github.com/yiling0308/AI_and_security/blob/master/WebGoat/picture/2.png)
