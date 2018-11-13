@@ -1,5 +1,8 @@
 
 #  鐵達尼號生存預測
+### 參考程式碼出處
+
+[[資料分析&機器學習] 第4.1講 : Kaggle競賽-鐵達尼號生存預測](https://medium.com/@yehjames/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC4-1%E8%AC%9B-kaggle%E7%AB%B6%E8%B3%BD-%E9%90%B5%E9%81%94%E5%B0%BC%E8%99%9F%E7%94%9F%E5%AD%98%E9%A0%90%E6%B8%AC-%E5%89%8D16-%E6%8E%92%E5%90%8D-a8842fea7077) 
 ---
 ### 載入所需套件以及資料
 資料下載處: [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic/data)
@@ -3283,83 +3286,6 @@ data['Title1'].unique()
 pd.crosstab(data['Title1'],data['Sex']).T.style.background_gradient(cmap='summer_r')
 ```
 
-
-
-
-<style  type="text/css" >
-    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col0 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col1 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col2 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col3 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col4 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col5 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col6 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col7 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col8 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col9 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col10 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col11 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col12 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col13 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col14 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col15 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col16 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row0_col17 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col0 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col1 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col2 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col3 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col4 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col5 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col6 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col7 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col8 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col9 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col10 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col11 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col12 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col13 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col14 {
-            background-color:  #ffff66;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col15 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col16 {
-            background-color:  #008066;
-        }    #T_19fce65c_e750_11e8_872d_1831bf9122d3row1_col17 {
-            background-color:  #ffff66;
-        }</style>  
 <table id="T_19fce65c_e750_11e8_872d_1831bf9122d3" > 
 <thead>    <tr> 
         <th class="index_name level0" >Title1</th> 
@@ -3451,80 +3377,7 @@ pd.crosstab(data['Title1'],data['Sex']).T.style.background_gradient(cmap='summer
 ```python
 pd.crosstab(data['Title1'],data['Survived']).T.style.background_gradient(cmap='summer_r')
 ```
-
-
-
-
-<style  type="text/css" >
-    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col0 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col1 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col2 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col3 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col4 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col5 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col6 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col7 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col8 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col9 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col10 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col11 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col12 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col13 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col14 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col15 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row0_col16 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col0 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col1 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col2 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col3 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col4 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col5 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col6 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col7 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col8 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col9 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col10 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col11 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col12 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col13 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col14 {
-            background-color:  #ffff66;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col15 {
-            background-color:  #008066;
-        }    #T_1a13c4dc_e750_11e8_93f4_1831bf9122d3row1_col16 {
-            background-color:  #008066;
-        }</style>  
+ 
 <table id="T_1a13c4dc_e750_11e8_93f4_1831bf9122d3" > 
 <thead>    <tr> 
         <th class="index_name level0" >Title1</th> 
@@ -3686,27 +3539,6 @@ data.groupby('Title2')['Age'].mean()
 pd.crosstab(data['Title2'],data['Sex']).T.style.background_gradient(cmap='summer_r') 
 ```
 
-
-
-
-<style  type="text/css" >
-    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row0_col0 {
-            background-color:  #ffff66;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row0_col1 {
-            background-color:  #008066;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row0_col2 {
-            background-color:  #ffff66;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row0_col3 {
-            background-color:  #008066;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row1_col0 {
-            background-color:  #008066;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row1_col1 {
-            background-color:  #ffff66;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row1_col2 {
-            background-color:  #008066;
-        }    #T_1ad2671c_e750_11e8_9c35_1831bf9122d3row1_col3 {
-            background-color:  #ffff66;
-        }</style>  
 <table id="T_1ad2671c_e750_11e8_9c35_1831bf9122d3" > 
 <thead>    <tr> 
         <th class="index_name level0" >Title2</th> 
@@ -3743,27 +3575,6 @@ pd.crosstab(data['Title2'],data['Sex']).T.style.background_gradient(cmap='summer
 pd.crosstab(data['Title2'],data['Survived']).T.style.background_gradient(cmap='summer_r') 
 ```
 
-
-
-
-<style  type="text/css" >
-    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row0_col0 {
-            background-color:  #ffff66;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row0_col1 {
-            background-color:  #ffff66;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row0_col2 {
-            background-color:  #008066;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row0_col3 {
-            background-color:  #ffff66;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row1_col0 {
-            background-color:  #008066;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row1_col1 {
-            background-color:  #008066;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row1_col2 {
-            background-color:  #ffff66;
-        }    #T_1ae93e3e_e750_11e8_a592_1831bf9122d3row1_col3 {
-            background-color:  #008066;
-        }</style>  
 <table id="T_1ae93e3e_e750_11e8_a592_1831bf9122d3" > 
 <thead>    <tr> 
         <th class="index_name level0" >Title2</th> 
