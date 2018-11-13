@@ -2313,8 +2313,6 @@ data
 
 
 # 資料分析
----
-
 
 ```python
 sns.countplot(data['Survived'])
@@ -3182,8 +3180,6 @@ g.map(sns.distplot, 'Family_Size', kde=False)
 #### 經過一些反覆的測試把“父母＋小孩”加上“兄弟姊妹＋丈夫妻子”的數量變成一個新的欄位叫做家庭大小，在預測上會更為準確
 
 # 特徵工程
----
-
 
 ```python
 data['Title1'] = data['Name'].str.split(", ", expand=True)[1]
@@ -3493,7 +3489,6 @@ data.groupby(['Title1'])['Age'].mean()
 #### 將稱謂對性別、生存率、以及年齡做分析，發現像是Master平均年齡只有五歲，非常小，都是男生，並且生存機率有大約6成。
 
 # 把稱謂做合併。
----
 
 
 ```python
@@ -3605,7 +3600,6 @@ pd.crosstab(data['Title2'],data['Survived']).T.style.background_gradient(cmap='s
 
 
 # 查看車票資訊
----
 
 
 ```python
@@ -3819,7 +3813,6 @@ sns.countplot(data['Ticket_info'], hue=data['Survived'])
 
 
 # 遺漏數填補
----
 
 
 ```python
@@ -3949,8 +3942,6 @@ sns.countplot(data['Cabin'], hue=data['Survived'])
 
 
 # 將類別資料轉為整數
----
-
 
 ```python
 data['Sex'] = data['Sex'].astype('category').cat.codes
@@ -4831,8 +4822,6 @@ dataTrain
 
 
 # 載入隨機森林演算法(Random Forest)來預測存活率
----
-
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
