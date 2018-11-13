@@ -2475,14 +2475,19 @@ g.map(sns.distplot, 'Age', kde=False)
 #### 發現年齡小的存活比例高出許多，呼應前面優先讓小孩搭船的推測。
 
 # 出現問題
+```
 C:\Users\owner\AppData\Local\conda\conda\envs\tensorflow\lib\site-packages\matplotlib\axes\_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
 warnings.warn("The 'normed' kwarg is deprecated, and has been "
+```
 ## 解決方法
 ---
 #### 因'normed'已被棄用，所以須修改[distributions.py](https://github.com/mwaskom/seaborn/blob/master/seaborn/distributions.py)檔案(直接下載取代原本檔案)
-windows路徑為 C:\Users\使用者\AppData\Local\conda\conda\pkgs\seaborn-0.8.1-py35hc73483e_0\Lib\site-packages\seaborn\distributions.py
-
+##### windows路徑為 
+```
+C:\Users\使用者\AppData\Local\conda\conda\pkgs\seaborn-0.8.1-py35hc73483e_0\Lib\site-packages\seaborn\distributions.py
+```
 ### distributions.py 內容
+```
 """Plotting functions for visualizing distributions."""
 from __future__ import division
 import numpy as np
@@ -3159,7 +3164,7 @@ def rugplot(a, height=.05, axis="x", ax=None, **kwargs):
     ax.autoscale_view(scalex=not vertical, scaley=vertical)
 
     return ax
-
+```
 ```python
 g = sns.FacetGrid(data, col='Survived')
 g.map(sns.distplot, 'Fare', kde=False)
